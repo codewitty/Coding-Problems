@@ -27,6 +27,8 @@ public:
 /*
 Optimal Solution:
 
+Referenced from : http://yucoding.blogspot.com/2013/10/leetcode-question-single-number-i.html
+
 using namespace std;
 6	
 7	int singleNumber(vector<int>& nums) {
