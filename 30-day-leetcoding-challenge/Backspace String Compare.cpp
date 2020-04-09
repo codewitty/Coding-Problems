@@ -1,3 +1,6 @@
+// Runtime : 0 ms
+// Memory Usage: 6.8 mb
+
 class Solution {
 public:
     bool backspaceCompare(string S, string T) {
