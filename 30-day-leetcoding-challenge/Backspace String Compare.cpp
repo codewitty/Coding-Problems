@@ -25,7 +25,7 @@ public:
             ans2.push_back(t.top());
 		    t.pop();
         }
-        return (ans1 == ans2)? true:false;
+        return ans1 == ans2;
             
     }
 };
