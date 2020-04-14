@@ -1,3 +1,4 @@
+// Accepted function
 
 string stringShift(string s, vector < vector < int >> & shift) {
   int toShift = 0;
@@ -32,6 +33,7 @@ return s;
 
 }
 
+// Driver code for testing
 
 #include <iostream>
 #include <string>
@@ -46,5 +48,5 @@ int main() {
   string a = "wpdhhcj";
   a = stringShift(a, shift);
   cout << a << endl;
-    return 0;
+  return 0;
 }
