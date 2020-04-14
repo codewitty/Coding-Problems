@@ -1,10 +1,3 @@
-#include <iostream>
-#include <string>
-#include <vector>
-#include <cmath>
-#include <unordered_map>
-
-using namespace std;
 
 string stringShift(string s, vector < vector < int >> & shift) {
   int toShift = 0;
@@ -38,6 +31,15 @@ if(toShift > 0) {
 return s;
 
 }
+
+
+#include <iostream>
+#include <string>
+#include <vector>
+#include <cmath>
+#include <unordered_map>
+
+using namespace std;
 
 int main() {
   vector<vector<int>> shift = {{0,7},{1,7},{1,0},{1,3},{0,3},{0,6},{1,2}};
