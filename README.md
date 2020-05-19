@@ -1,6 +1,6 @@
 # My LeetCode Solutions
 
-> This repo contains Codewar Kata solutions in C++
+> This repo contains LeetCode Solutions in C++
 
 
 [![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger)
@@ -32,7 +32,7 @@ Find the problem <a href="https://leetcode.com/explore/challenge/card/30-day-lee
 ---
 
 ### Arrays 101
-- Solutions for the Arrays Sequence on LeetCode./
+- Solutions for the Arrays Sequence on LeetCode.\
 Find the challenge <a href="https://leetcode.com/explore/featured/card/fun-with-arrays/525/inserting-items-into-an-array/" target="_blank">`here`</a>
 
 #### Duplicate Zeroes
@@ -40,21 +40,19 @@ Find the challenge <a href="https://leetcode.com/explore/featured/card/fun-with-
 Note that after backspacing an empty text, the text will continue empty.\
 My solution is <a href="https://github.com/codewitty/LeetCode/blob/master/Arrays/Duplicate%20Zeros.cpp/" target="_blank">`here`</a>.\
 Find the problem <a href="https://leetcode.com/explore/featured/card/fun-with-arrays/525/inserting-items-into-an-array/3245/" target="_blank">`here`</a>.
+
+#### Merge Sorted Array
+- Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.\
+Note:\
+The number of elements initialized in nums1 and nums2 are m and n respectively.\
+You may assume that nums1 has enough space (size that is greater or equal to m + n) to hold additional elements from nums2.\
+My solution is <a href="https://leetcode.com/explore/featured/card/fun-with-arrays/525/inserting-items-into-an-array/3253/" target="_blank">`here`</a>.\
+Find the problem <a href="https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/529/week-2/3291/" target="_blank">`here`</a>.
 ---
 
-#### Find The Parity Outlier
-- Find the function <a href="https://github.com/codewitty/CodeWars/blob/master/Find%20The%20Parity%20Outlier.cpp/" target="_blank">`here`</a>
+### Random
 
 ---
-
-#### Isograms
-- Find the function <a href="https://github.com/codewitty/CodeWars/blob/master/Isograms.cpp/" target="_blank">`here`</a>
-
----
-
-#### Number of trailing zeros of N!
-- Find the function <a href="https://github.com/codewitty/CodeWars/blob/master/Number%20of%20trailing%20zeros%20of%20N!.cpp/" target="_blank">`here`</a>
-
 ## Support
 
 Reach out to me at one of the following places!
