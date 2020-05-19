@@ -1,3 +1,5 @@
+// Brute Force solution. TLE!!!
+
 #include <iostream>
 #include <vector>
 
@@ -6,18 +8,23 @@ using namespace std;
 int subarraySum(vector<int>& nums, int k) {
         int count = 0;
         int sum = 0;
+        int n = 0;
         for (int i = 0; i < nums.size(); ++i) {
-            int n = i;
-            while (sum < abs(k) && n < nums.size()){
-                sum += nums[n];
-                n++;
-            }
+          sum += nums[i];
+          if (sum == k)
+              count++;
+          n = i+1;
+          while (n < nums.size()) {
+            sum += nums[n];
             if (sum == k)
-                count++;
-            sum = 0;
-        }
-        return count;
+              count++;
+            n++;
+              }
+          
+          sum = 0;
         
+      }  
+      return count;
     }
     
 int main() {
