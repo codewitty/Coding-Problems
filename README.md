@@ -38,7 +38,7 @@ Find the challenge <a href="https://leetcode.com/explore/featured/card/fun-with-
 #### Duplicate Zeroes
 - Given two strings S and T, return if they are equal when both are typed into empty text editors. # means a backspace character.\
 Note that after backspacing an empty text, the text will continue empty.\
-My solution is <a href="https://github.com/codewitty/LeetCode/blob/master/30-day-leetcoding-challenge/Backspace%20String%20Compare.cpp/" target="_blank">`here`</a>.\
+My solution is <a href="https://github.com/codewitty/LeetCode/blob/master/Arrays/Duplicate%20Zeros.cpp/" target="_blank">`here`</a>.\
 Find the problem <a href="https://leetcode.com/explore/featured/card/fun-with-arrays/525/inserting-items-into-an-array/3245/" target="_blank">`here`</a>.
 ---
 
