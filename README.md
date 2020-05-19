@@ -12,7 +12,7 @@
 
 - [30-Days-of-Code](#30-days-of-code)
 	* [Backspace String Compare.cpp](#backspace-string-compare)
-- [Arrays](#arrays)
+- [Arrays 101](#arrays-101)
 	* [Duplicate Zeros.cpp](#duplicate-zeroes)
 	* [Merge Sorted Array.cpp](#merge-sorted-array)
 - [Random](#random)
@@ -26,14 +26,20 @@
 #### Backspace String Compare
 - Given two strings S and T, return if they are equal when both are typed into empty text editors. # means a backspace character.\
 Note that after backspacing an empty text, the text will continue empty.\
-My solution is <a href="https://github.com/codewitty/LeetCode/blob/master/30-day-leetcoding-challenge/Backspace%20String%20Compare.cpp/" target="_blank">`here`</a>\
-Find the problem <a href="https://leetcode.com/explore/featured/card/fun-with-arrays/525/inserting-items-into-an-array/3245/" target="_blank">`here`</a>
+My solution is <a href="https://github.com/codewitty/LeetCode/blob/master/30-day-leetcoding-challenge/Backspace%20String%20Compare.cpp/" target="_blank">`here`</a>.\
+Find the problem <a href="https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/529/week-2/3291/" target="_blank">`here`</a>.
 
 ---
 
-#### Equal Sides of an Array
-- Find the function <a href="https://github.com/codewitty/CodeWars/blob/master/Equal%20Sides%20Of%20An%20Array.cpp/" target="_blank">`here`</a>
+### Arrays 101
+- Solutions for the Arrays Sequence on LeetCode./
+Find the challenge <a href="https://leetcode.com/explore/featured/card/fun-with-arrays/525/inserting-items-into-an-array/" target="_blank">`here`</a>
 
+#### Duplicate Zeroes
+- Given two strings S and T, return if they are equal when both are typed into empty text editors. # means a backspace character.\
+Note that after backspacing an empty text, the text will continue empty.\
+My solution is <a href="https://github.com/codewitty/LeetCode/blob/master/30-day-leetcoding-challenge/Backspace%20String%20Compare.cpp/" target="_blank">`here`</a>.\
+Find the problem <a href="https://leetcode.com/explore/featured/card/fun-with-arrays/525/inserting-items-into-an-array/3245/" target="_blank">`here`</a>.
 ---
 
 #### Find The Parity Outlier
