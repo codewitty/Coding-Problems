@@ -15,6 +15,7 @@
 - [Arrays 101](#arrays-101)
 	* [Duplicate Zeros.cpp](#duplicate-zeroes)
 	* [Merge Sorted Array.cpp](#merge-sorted-array)
+	* [Remove Elements.cpp](#remove-elements)
 - [Random](#random)
 	* [2. Add Two Numbers.cpp](#add-two-numbers)
 
@@ -48,6 +49,21 @@ The number of elements initialized in nums1 and nums2 are m and n respectively.\
 You may assume that nums1 has enough space (size that is greater or equal to m + n) to hold additional elements from nums2.\
 My solution is <a href="https://leetcode.com/explore/featured/card/fun-with-arrays/525/inserting-items-into-an-array/3253/" target="_blank">`here`</a>.\
 Find the problem <a href="https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/529/week-2/3291/" target="_blank">`here`</a>.
+
+#### Remove Element
+- Given an array nums and a value val, remove all instances of that value in-place and return the new length.\
+Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.\
+The order of elements can be changed. It doesn't matter what you leave beyond the new length.\
+My solution is <a href="https://github.com/codewitty/LeetCode/blob/master/Arrays/Remove_Element.cpp/" target="_blank">`here`</a>.\
+Find the problem <a href="https://leetcode.com/explore/featured/card/fun-with-arrays/526/deleting-items-from-an-array/3247/" target="_blank">`here`</a>.
+
+#### 
+- Given an array nums and a value val, remove all instances of that value in-place and return the new length.\
+Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.\
+The order of elements can be changed. It doesn't matter what you leave beyond the new length.\
+My solution is <a href="/" target="_blank">`here`</a>.\
+Find the problem <a href="/" target="_blank">`here`</a>.
+
 ---
 
 ### Random
