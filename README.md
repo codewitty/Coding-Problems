@@ -57,12 +57,14 @@ The order of elements can be changed. It doesn't matter what you leave beyond th
 My solution is <a href="https://github.com/codewitty/LeetCode/blob/master/Arrays/Remove_Element.cpp/" target="_blank">`here`</a>.\
 Find the problem <a href="https://leetcode.com/explore/featured/card/fun-with-arrays/526/deleting-items-from-an-array/3247/" target="_blank">`here`</a>.
 
+<!---
 #### 
 - Given an array nums and a value val, remove all instances of that value in-place and return the new length.\
 Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.\
 The order of elements can be changed. It doesn't matter what you leave beyond the new length.\
 My solution is <a href="/" target="_blank">`here`</a>.\
 Find the problem <a href="/" target="_blank">`here`</a>.
+-->
 
 ---
 
