@@ -13,7 +13,7 @@
 - [30-Days-of-Code](#30-days-of-code)
 	* [Backspace String Compare.cpp](#backspace-string-compare)
 - [Arrays 101](#arrays-101)
-	* [Duplicate Zeros.cpp](#1.-duplicate-zeroes)
+	* [Duplicate Zeros.cpp](#-1.-duplicate-zeroes)
 	* [Merge Sorted Array.cpp](#2.-merge-sorted-array)
 	* [Remove Elements.cpp](#3.-remove-elements)
 - [Random](#random)
