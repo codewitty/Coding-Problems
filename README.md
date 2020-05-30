@@ -16,6 +16,7 @@
 	* [Duplicate Zeros.cpp](#1-duplicate-zeroes)
 	* [Merge Sorted Array.cpp](#2-merge-sorted-array)
 	* [Remove Elements.cpp](#3-remove-elements)
+	* [Check If N and Its Double Exist.cpp](#4-check-if-n-and-its-double-exist)
 - [Random](#random)
 	* [2. Add Two Numbers.cpp](#add-two-numbers)
 
@@ -57,6 +58,14 @@ The order of elements can be changed. It doesn't matter what you leave beyond th
 My solution is <a href="https://github.com/codewitty/LeetCode/blob/master/Arrays/Remove_Element.cpp/" target="_blank">`here`</a>.\
 Find the problem <a href="https://leetcode.com/explore/featured/card/fun-with-arrays/526/deleting-items-from-an-array/3247/" target="_blank">`here`</a>.
 
+#### 4. Check If N and Its Double Exist
+- Given an array arr of integers, check if there exists two integers N and M such that N is the double of M ( i.e. N = 2 * M). \
+More formally check if there exists two indices i and j such that :\
+i != j\
+0 <= i, j < arr.length\
+arr[i] == 2 * arr[j]\
+My solution is <a href="https://github.com/codewitty/LeetCode/blob/master/Check_If_N_and_Its_Double_Exist.cpp/" target="_blank">`here`</a>.\
+Find the problem <a href="https://leetcode.com/explore/learn/card/fun-with-arrays/527/searching-for-items-in-an-array/3250/" target="_blank">`here`</a>.
 <!---
 #### 
 - Given an array nums and a value val, remove all instances of that value in-place and return the new length.\
