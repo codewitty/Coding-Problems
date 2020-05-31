@@ -17,6 +17,7 @@
 	* [Merge Sorted Array.cpp](#2-merge-sorted-array)
 	* [Remove Elements.cpp](#3-remove-elements)
 	* [Check If N and Its Double Exist.cpp](#4-check-if-n-and-its-double-exist)
+	* [Valid Mountain Array.cpp](#5-valid-mountain-array)
 - [Random](#random)
 	* [2. Add Two Numbers.cpp](#add-two-numbers)
 
@@ -66,6 +67,12 @@ i != j\
 arr[i] == 2 * arr[j]\
 My solution is <a href="https://github.com/codewitty/LeetCode/blob/master/Check_If_N_and_Its_Double_Exist.cpp/" target="_blank">`here`</a>.\
 Find the problem <a href="https://leetcode.com/explore/learn/card/fun-with-arrays/527/searching-for-items-in-an-array/3250/" target="_blank">`here`</a>.
+
+#### 5. Valid Mountain Array
+- Given an array A of integers, return true if and only if it is a valid mountain array.\
+Recall that A is a mountain array if and only if:\
+My solution is <a href="/" target="_blank">`here`</a>.\
+Find the problem <a href="/" target="_blank">`here`</a>.
 <!---
 #### 
 - Given an array nums and a value val, remove all instances of that value in-place and return the new length.\
