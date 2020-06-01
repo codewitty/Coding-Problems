@@ -18,6 +18,7 @@
 	* [Remove Elements.cpp](#3-remove-elements)
 	* [Check If N and Its Double Exist.cpp](#4-check-if-n-and-its-double-exist)
 	* [Valid Mountain Array.cpp](#5-valid-mountain-array)
+	* [Replace Elements with Greatest Element on Right Side.cpp](#6-replace-elements-with-greatest-element-on-right-side)
 - [Random](#random)
 	* [2. Add Two Numbers.cpp](#add-two-numbers)
 
@@ -77,6 +78,17 @@ Recall that A is a mountain array if and only if:
 		+ A[i] > A[i+1] > ... > A[A.length - 1]
 - My solution is <a href="https://github.com/codewitty/LeetCode/blob/master/Arrays/Valid_Mountain_Array.cpp/" target="_blank">`here`</a>.\
 Find the problem <a href="https://leetcode.com/explore/learn/card/fun-with-arrays/527/searching-for-items-in-an-array/3251/" target="_blank">`here`</a>.
+
+#### 6. Replace Elements with Greatest Element on Right Side
+- Given an array arr, replace every element in that array with the greatest element among the elements to its right, and replace the last element with -1.\
+After doing so, return the array.\
+* Example 1:
+\
+Input: arr = [17,18,5,4,6,1]\
+Output: [18,6,6,6,1,-1]\
+My solution is <a href="https://github.com/codewitty/LeetCode/blob/master/Arrays/Replace_Elements_with_Greatest_Element_on_Right_Side.cpp/" target="_blank">`here`</a>.\
+Find the problem <a href="https://leetcode.com/explore/learn/card/fun-with-arrays/511/in-place-operations/3259/" target="_blank">`here`</a>.
+
 <!---
 #### 
 - Given an array nums and a value val, remove all instances of that value in-place and return the new length.\
