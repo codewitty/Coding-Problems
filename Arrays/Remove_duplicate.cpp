@@ -4,23 +4,14 @@
 using namespace std;
 
 int removeDuplicates(vector<int>& nums) {
-    int check = 0;
-    for (int i = 0; i < nums.size() - 1; ++i){
-        int j = i + 1;
-        while (nums[i] == nums[j]) {
-            j++;
+    int i = 0;
+    for (int j = 1; j < nums.size(); ++j){
+        if (nums[j] != nums[i]) {
+            i++;
+            nums[i] = nums[j];
         }
-        if (j > i + 1) {
-            nums[i+1] = nums[j];
-            check++;
-        }
-      i = j - 1;
     }
-    while (check > 0){
-        nums.pop_back();
-        check--;
-    }
-    return nums.size();  
+    return i + 1;
 }
 
 int main() {
