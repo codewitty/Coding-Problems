@@ -4,22 +4,26 @@
 
 using namespace std;
 
+void swap(int *x, int *y){
+    int temp = *x;
+    *x = *y;
+    *y = temp;
+}
+
 vector<int> sortedSquares(vector<int>& nums) {
+    int min = 0;
     for (int i = 0; i < nums.size(); i++){
         nums[i] = pow(nums[i], 2);
     }
 
-    int j = 0;
-    int temp = 0;
-    for (int i = 1; i < nums.size(); i++){
-        if (nums[j] % 2 != 0 && nums[i] % 2 == 0){
-         temp = nums[i];
-         nums[i] = nums[j];
-         nums[j] = temp;
-         j++;
+    for (int i = 0; i < nums.size(); i++){
+        min = i;
+        for(int j = i+1; j < nums.size(); ++j){
+            if(nums[j] < nums[min])
+                min = j;
+            swap(&nums[min], &nums[i]);
+
         }
-        if (nums[j] == 0 || nums[j] %2 == 0)
-            j++;
     }
     return nums;
 }
