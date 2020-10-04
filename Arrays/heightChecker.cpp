@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include <cmath>
 #include <vector>
 
@@ -10,44 +11,43 @@ void swap(int *x, int *y){
     *y = temp;
 }
 
-vector<int> heightChecker(vector<int>& heights) {
+int heightChecker(vector<int>& heights) {
     int count = 0;
     int j = 0;
+    int i = 0;
     while (i < heights.size()){
-        while(heights[i] < heights[i+1]) {
+        while(i < heights.size() - 1 && heights[i] <= heights[i+1]) {
             i++;
         }
-        if(i < heights.size())
-            swap(heights[i], heights[i+1])
-    }
-}
-
-    for (int i = 0; i < heights.size()-1; i++){
-        min = i;
-        for(int j = i+1; j < heights.size(); j++){
-            if(heights[j] < heights[i]){
-                min = j;
-                swap(&heights[min], &heights[i]);
-            }
+        if(i < heights.size()){
+            int minElementIndex = min_element(heights.begin()+i,heights.end()) - heights.begin();
+            swap(&heights[i], &heights[minElementIndex]);
+            count++;
         }
+        if(i == heights.size()-1)
+          break;
     }
-    return heights;
+
+    return count;
 }
 
 // Driver Code
 int main() {
-vector<int> heights = {-4, -1, 0, 1, 3, 10};
+vector<int> heights = {1, 1, 4, 2, 1, 3};
+cout << heights.size() << endl;
 
 cout << "Original Array: ";
 for (int i = 0; i < heights.size(); i++) {
     cout << heights[i] << " ";
 }
-heights = sortedSquares(heights);
+
+int count = heightChecker(heights);
 
 cout << "\nModified Array: ";
 for (int i = 0; i < heights.size(); i++) {
     cout << heights[i] << " ";
 }
 
+cout << "Count is: " << count << endl;
   return 0;
 }
