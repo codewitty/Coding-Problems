@@ -10,37 +10,43 @@ void swap(int *x, int *y){
     *y = temp;
 }
 
-vector<int> sortedSquares(vector<int>& nums) {
-    int min = 0;
-    for (int i = 0; i < nums.size(); i++){
-        nums[i] = pow(nums[i], 2);
+vector<int> heightChecker(vector<int>& heights) {
+    int count = 0;
+    int j = 0;
+    while (i < heights.size()){
+        while(heights[i] < heights[i+1]) {
+            i++;
+        }
+        if(i < heights.size())
+            swap(heights[i], heights[i+1])
     }
+}
 
-    for (int i = 0; i < nums.size()-1; i++){
+    for (int i = 0; i < heights.size()-1; i++){
         min = i;
-        for(int j = i+1; j < nums.size(); j++){
-            if(nums[j] < nums[i]){
+        for(int j = i+1; j < heights.size(); j++){
+            if(heights[j] < heights[i]){
                 min = j;
-                swap(&nums[min], &nums[i]);
+                swap(&heights[min], &heights[i]);
             }
         }
     }
-    return nums;
+    return heights;
 }
 
 // Driver Code
 int main() {
-vector<int> nums = {-4, -1, 0, 1, 3, 10};
+vector<int> heights = {-4, -1, 0, 1, 3, 10};
 
 cout << "Original Array: ";
-for (int i = 0; i < nums.size(); i++) {
-    cout << nums[i] << " ";
+for (int i = 0; i < heights.size(); i++) {
+    cout << heights[i] << " ";
 }
-nums = sortedSquares(nums);
+heights = sortedSquares(heights);
 
 cout << "\nModified Array: ";
-for (int i = 0; i < nums.size(); i++) {
-    cout << nums[i] << " ";
+for (int i = 0; i < heights.size(); i++) {
+    cout << heights[i] << " ";
 }
 
   return 0;
