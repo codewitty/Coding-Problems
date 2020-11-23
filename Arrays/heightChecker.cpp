@@ -19,7 +19,7 @@ int heightChecker(vector<int>& heights) {
         while(i < heights.size() - 1 && heights[i] <= heights[i+1]) {
             i++;
         }
-        if(i < heights.size()){
+        if(i < heights.size()-1 && heights [i] > heights[i+1]){
             int minElementIndex = min_element(heights.begin()+i,heights.end()) - heights.begin();
             swap(&heights[i], &heights[minElementIndex]);
             count++;
