@@ -15,16 +15,12 @@ def heightChecker(heights):
         flag = True
         count = 0
 
-    while flag == False:
-        while i < len(heights):
-            if heights[i] < heights[i-1]:
-                heights[i-1], heights[i] = heights[i], heights[i-1]
-                count+=1
-            else:
-                i+=1
-
-        if heights == out_sort:
-            flag = True
+    while i < len(heights):
+        if heights[i] < heights[i-1]:
+            heights[i-1], heights[i] = heights[i], heights[i-1]
+            count+=1
+        else:
+            i+=1
 
     return count
 
