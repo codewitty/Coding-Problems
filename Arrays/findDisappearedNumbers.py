@@ -10,7 +10,11 @@ class Solution(object):
 
         for i in range(0, len(nums) - 1):
            if nums[i + 1] > nums[i] + 1:
-               out.append(nums[i+1])
+               difference = nums[i+1] - nums[i]
+               index = 0
+               while (index < difference)
+                   out.append(nums[i]+1)
+                   index++
 
         return out
 
