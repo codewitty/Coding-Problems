@@ -2,6 +2,32 @@ from typing import List
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
+        def binary_search(lst, target):
+            low = 0
+            high = len(lst) - 1
+            while low <= high:
+                mid = (low + high) // 2
+                if lst[mid] == target:
+                    return mid
+                elif lst[mid] > target:
+                    high = mid - 1
+                else:
+                    low = mid + 1
+        return None
+
+
+    def two_sum_binary_search(arr, total):
+        length = len(arr)
+        arr = sorted(arr)
+        for i in range(length):
+            complement = total - arr[i]
+            complement_idx = binary_search(arr, complement)
+            # print(f"comliment: {complement} idx: {complement_idx}")
+            if complement_idx is not None:  # Found solution!
+                if complement_idx != i:
+                    return (i, complement_idx)
+        return None
+    """
         output = []
         for i in range(len(nums)):
             for j in range(i+1, len(nums)):
@@ -10,6 +36,7 @@ class Solution:
                     output.append(j)
                     return output 
         return None
+    """
 
 
 # Test using assert
