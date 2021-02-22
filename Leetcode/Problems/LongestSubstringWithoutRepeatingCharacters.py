@@ -17,3 +17,20 @@ class Solution:
 
 obj = Solution()
 print(obj.lengthOfLongestSubstring("afsdkghshauogjqrijewrgipjqwruyfansdghdpfhwgijpiwfij"))
+
+
+"""
+#Best
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        longest = 0
+        sub_string = ""
+        for c in s:
+            if c not in sub_string:
+                sub_string += c
+                longest = max(longest, len(sub_string))
+            else:
+                sub_string = sub_string[sub_string.index(c)+1:] + c
+
+        return longest
+"""
