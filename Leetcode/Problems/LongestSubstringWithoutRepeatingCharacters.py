@@ -18,8 +18,24 @@ class Solution:
 obj = Solution()
 print(obj.lengthOfLongestSubstring("afsdkghshauogjqrijewrgipjqwruyfansdghdpfhwgijpiwfij"))
 
-
 """
+#Better
+
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        tracker = {}
+        max_s = 0
+        start = 0
+
+        for end in range(len(s)):
+            if s[end] in tracker:
+                start = max(start, tracker[s[end]] + 1)
+            tracker[s[end]] = end
+            max_s = max(max_s, end-start + 1)
+
+        return max_s
+
+
 #Best
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
