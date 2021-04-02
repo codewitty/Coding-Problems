@@ -22,11 +22,7 @@ class Solution(object):
             d = []
             
             if isinstance(tree[key], list):
-                kk
-
-
-                
-        return tree
+                return tree
 
 obj1 = Solution()
 
