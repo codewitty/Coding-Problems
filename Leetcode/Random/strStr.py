@@ -2,7 +2,7 @@ import unittest
 
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
-        if needle == "":
+        if not needle:
             return 0
         return haystack.find(needle)
 
