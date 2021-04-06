@@ -19,3 +19,11 @@ class Solution:
                 return False
             
         return not out
+
+def main():
+    obj = Solution()
+    print(f'{obj.isValid("({{[]}})")}')
+    print(f'{obj.isValid("({{[}]})")}')
+
+if __name__ == "__main__":
+    main()
