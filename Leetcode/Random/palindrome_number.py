@@ -1,3 +1,5 @@
+import unittest
+
 class Solution:
     def isPalindrome(self, x: int) -> bool:
         if x >= 0:
@@ -7,10 +9,14 @@ class Solution:
                 return True
         else:
             return False
-    
-def main():
-    obj = Solution()
-    print(f'{obj.isPalindrome(11)}')
+
+class TestFunction(unittest.TestCase):
+    def test_incorrectInput_single(self):
+        obj = Solution()
+        self.assertFalse(obj.isPalindrome(12))
+    def test_correctInput_single(self):
+        obj = Solution()
+        self.assertTrue(obj.isPalindrome(11))
 
 if __name__ == "__main__":
-    main()
+    unittest.main()
