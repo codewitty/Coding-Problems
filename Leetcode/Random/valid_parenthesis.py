@@ -22,8 +22,9 @@ class Solution:
 
 def main():
     obj = Solution()
-    print(f'{obj.isValid("({{[]}})")}')
-    print(f'{obj.isValid("({{[}]})")}')
+    print(f'Correct Answers:\n    True\n    False\nReturned Answers:')
+    print(f'    {obj.isValid("({{[]}})")}')
+    print(f'    {obj.isValid("({{[}]})")}')
 
 if __name__ == "__main__":
     main()
