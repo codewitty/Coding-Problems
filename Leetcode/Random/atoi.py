@@ -40,3 +40,5 @@ class Solution:
         return an_integer
 
 
+obj = Solution()
+print(f'{obj.myAtoi("++1")}')
