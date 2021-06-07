@@ -8,3 +8,4 @@ class Solution:
 
 obj = Solution()
 print(obj.maximumWealth([[1,2,3],[3,2,1]]))
+print(obj.maximumWealth([[1,2,3],[4,2,1]]))
