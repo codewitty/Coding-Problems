@@ -13,18 +13,13 @@ class Logger:
         If this method returns false, the message will not be printed.
         The timestamp is in seconds granularity.
         """
-        if not message in self.dict.keys():
-            print("Adding")
-            self.dict[message] = timestamp
-            return True
+        value = self.dict.get(message, -1)
+
+        if value > timestamp:
+            return False
         
-        else:
-            if self.dict[message] + 10 <= timestamp:
-                print(f'Value: {self.dict[message] + 10} <= {timestamp}')
-                return True
-            else:
-                print("No print now return false")
-                return False
+        self.dict[message] = timestamp + 10
+        return True
 
 
 # Your Logger object will be instantiated and called as such:
@@ -34,6 +29,8 @@ print(param1)
 param1 = obj.shouldPrintMessage(2,"bar")
 print(param1)
 param1 = obj.shouldPrintMessage(7,"foo")
+print(param1)
+param1 = obj.shouldPrintMessage(11,"foo")
 print(param1)
 param1 = obj.shouldPrintMessage(11,"foo")
 print(param1)
