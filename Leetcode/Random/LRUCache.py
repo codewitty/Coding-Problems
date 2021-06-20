@@ -21,7 +21,8 @@ class LRUCache:
             if value < mins:
                 mins = value
                 keya = key
-        del self.dict[keya]
+        #del self.dict[keya]
+        self.dict.pop(keya)
         
 
     def put(self, key: int, value: int) -> None:
