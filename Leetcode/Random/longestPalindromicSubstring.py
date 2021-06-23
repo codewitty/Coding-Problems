@@ -9,6 +9,8 @@ class Solution:
         for num in range(len(s)):
             i = num
             j = len(s) - 1
+            while s[i] != s[j]:
+                j-=1
             while i != j:
                 if s[i] == s[j]:
                     output = s[i:j+1]
@@ -17,9 +19,6 @@ class Solution:
                 else:
                     output = ""
                     break
-
-
-
 
         return output
 
