@@ -1,12 +1,11 @@
 class Solution:
     def longestPalindrome(self, s: str) -> str:
-
-        if len(s) == 1 or len(s) == 2:
-            return s
-
         s = s.lower()
+        output = s[0]
 
         for num in range(len(s)):
+            if output == s:
+                return s
             i = num
             j = len(s) - 1
             while s[i] != s[j]:
@@ -16,15 +15,15 @@ class Solution:
                     output = s[i:j+1]
                     i += 1
                     j -= 1
+                    if len(output) == 2:
+                        break
                 else:
                     output = ""
                     break
 
         return output
 
-
-
 obj = Solution()
 
-print(f'{obj.longestPalindrome("aca")}')
+print(f'{obj.longestPalindrome("aaaaa")}')
 
