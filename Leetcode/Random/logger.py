@@ -22,7 +22,7 @@ class Logger:
         return True
 
 
-# Your Logger object will be instantiated and called as such for testing:
+# Your Logger object will be instantiated and called as such for testing
 obj = Logger()
 param1 = obj.shouldPrintMessage(1,"foo")
 print(param1)
